@@ -1,0 +1,124 @@
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Aul</title>
+<style>
+  body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #db8dae; 
+  }
+  nav { 
+    background: #a8647c; 
+    color: rgb(224, 196, 196); 
+    padding: 10px; 
+    text-align: center;
+  }
+  nav a { 
+    color: rgb(247, 204, 204); 
+    margin: 0 10px; 
+    text-decoration: none; 
+    font-weight: bold; 
+  }
+  nav a:hover { text-decoration: underline; }
+  .page { 
+    display: none; 
+    padding: 20px; 
+  }
+  .active{display: block;}
+  .center {text-align: center;}
+
+  img { 
+    max-width: 200px; 
+    border-radius: 10px; 
+    margin: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  h1, h2, p { color: #4a0033; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" onclick="showPage('home')">Home</a>
+  <a href="#" onclick="showPage('gallery')">Gallery</a>
+  <a href="#" onclick="showPage('prestasi')">Prestasi</a>
+  <a href="#" onclick="showPage('aull')">Aull</a>
+</nav>
+
+<div id="home" class="page active">
+  <h1>Hai, Aku Aul! 💖</h1>
+  <p>Namaku <b>Aulia Eka Fitria Wulandari</b>, biasa dipanggil Aul. Aku lahir di Boyolali, 5 November 2007.  
+  Aku suka dunia teknologi, khususnya jaringan komputer dan 
+  keamanan siber. Aku juga orang yang senang belajar hal baru dan 
+  berbagi ilmu ke orang lain 😊.</p>
+
+<div class="center">
+  <h2>aullll</h2>
+  <img src="aullll.jpg">
+
+  <h2>leeJeno</h2>
+  <img src="leeJeno.jpeg">
+</div>
+</div>
+
+<div id="gallery" class="page">
+<div class="center">
+  <h1>Galeri Foto</h1>
+  <img src="foto.jpg/Screenshot 2025-07-16 140915.png">
+  <img src="foto.jpg/Screenshot 2025-08-01 105843.png">
+  <img src="coding lalu lintas.png">
+  <img src="Screenshot 2025-08-13 114113.png">
+</div>
+</div>
+
+<div id="prestasi" class="page">
+  <h1>Hai, ini adalah prestasi dan kemampuanku💖</h1>
+  <p>
+    haiiii teman-teman, selamaa akuu bersekolah sejak sd hingga sekarang
+    saya sangatt suka dengan apapun yang berkaitan dengan komputer, saya
+    juga mengasah keterampilan saya melalui youtube, google, dan lain sebagainya.
+  </p>
+  <p>ditahun 2025 kemarin saya mengikuti lomba cyber security atau keamanan cyber 
+    tingkat provinsi. sebenarnyaa sayaa ingin mengikuti lomba Network System Administator 
+    namun ketika seleksi yang majuu adalah teman sayaa yang kebetulan sekarang menjadi teman seperjuangan saya.
+    dan saya juga pernah mengikuti perlombaan robotic ketika saya kelas 9 mts saya memenangkan juara 2
+    tingkat provinsi. selain itu saya juga memenangkan medali emas pada 2 perlombaan TIK tingkat nasional
+    dan 1 medali emas bidang fisika tingkat nasional. selain ituu saya jugaa sangat suka dlaam bermain 
+    jaringan seperti konfigurasi router mikrotik, cisco packet tracet, tplink, debian, dan masih banyaa lagii.
+  </p>
+<div class="center">
+  <h2>Beberapa Sertifikat yang Saya Miliki</h2>
+  <h3>sertifikat cyber</h3>
+  <img src="foto.jpg/cyber.jpg">
+  <h3>sertifikat tik</h3>
+  <img src="foto.jpg/tik1.jpg">
+  <img src="foto.jpg/tik2.jpg">
+  <h3>sertifikat fisika</h3>
+  <img src="foto.jpg/fisika.jpg">
+</div>
+</div>
+
+<div id="aull" class="page">
+<div class="center">
+  <h1>inii tentang aull</h1>
+  <img src="aulpunyabr.jpg/aull.jpg">
+  <img src="aulpunyabr.jpg/aulpikaa.jpg">
+  <img src="aulpunyabr.jpg/kerjakelompok.jpg">
+  <img src="aulpunyabr.jpg/liaaaa.jpg">
+</div>
+</div>
+
+<script>
+  function showPage(pageId) {
+    document.querySelectorAll('.page').forEach(function(page) {
+      page.classList.remove('active');
+    });
+    document.getElementById(pageId).classList.add('active');
+  }
+</script>
+
+</body>
+</html>
